@@ -1,5 +1,5 @@
-#define NOBUILD_IMPLEMENTATION
-#include "../nobuild.h"
+#define ZeroBuild_IMPLEMENTATION
+#include "../src/ZeroBuild.h"
 
 #define DEMO_S(expr)                         \
     INFO("    " #expr " == \"%s\"", expr)
