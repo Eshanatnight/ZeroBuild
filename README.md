@@ -51,4 +51,4 @@ Keep in mind that [ZeroBuild.h](./ZeroBuild.h) is an [stb-style](https://github.
    - `$ cl.exe ZeroBuild.c` on Windows with MSVC
 4. Run the build: `$ ./ZeroBuild`
 
-If you enable the [Go Rebuild Urself™](https://github.com/tsoding/ZeroBuild/blob/d2bd711f0e2bcff0651850cd795509ab104ad9d4/ZeroBuild.h#L218-L239) Technology the `ZeroBuild` executable will try to rebootstrap itself every time you modify its source code.
+If you enable the [Go Rebuild Yourrself] Technology the `ZeroBuild` executable will try to rebootstrap itself every time you modify its source code.
