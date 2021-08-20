@@ -1,0 +1,12 @@
+#IDE And Text Editor
+/.idea
+/.vs
+/.vscode
+
+#Build
+/cmake-build-debug
+/cmake-build-release
+/build
+
+#Binaries
+*.exe
