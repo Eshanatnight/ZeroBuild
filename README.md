@@ -13,7 +13,7 @@ $ gcc ./ZeroBuild.c -o ZeroBuild
 $ ./ZeroBuild
 ```
 
-Explore [ZeroBuild.c](./ZeroBuild.c) file to learn more.
+Explore [ZeroBuild.c](./src/ZeroBuild.c) file to learn more.
 
 ## This is an Experimental Project
 
@@ -42,13 +42,16 @@ If you are using [cmake](https://cmake.org/) with tons of modules to manage and 
 
 ## How to use the library in your own project
 
-Keep in mind that [ZeroBuild.h](./ZeroBuild.h) is an [stb-style](https://github.com/nothings/stb/blob/master/docs/stb_howto.txt) header-only library. That means that just including it does not include the implementations of the functions. You have to `#define ZeroBuild_IMPLEMENTATION` before the include. See the [ZeroBuild.c](./ZeroBuild.c) for an example.
+Keep in mind that [ZeroBuild.h](./src/ZeroBuild.h) is an [stb-style](https://github.com/nothings/stb/blob/master/docs/stb_howto.txt) header-only library. That means that just including it does not include the implementations of the functions. You have to `#define ZeroBuild_IMPLEMENTATION` before the include. See the [ZeroBuild.c](./src/ZeroBuild.c) for an example.
 
-1. Copy [ZeroBuild.h](./ZeroBuild.h) to your project
-2. Create `ZeroBuild.c` in your project with the build recipe. See our [ZeroBuild.c](./ZeroBuild.c) for an example.
+1. Copy [ZeroBuild.h](./src/ZeroBuild.h) to your project
+2. Create `ZeroBuild.c` in your project with the build recipe. See our [ZeroBuild.c](./src/ZeroBuild.c) for an example.
 3. Bootstrap the `ZeroBuild` executable:
    - `$ cc ZeroBuild.c -o ZeroBuild` on POSIX systems
    - `$ cl.exe ZeroBuild.c` on Windows with MSVC
 4. Run the build: `$ ./ZeroBuild`
 
 If you enable the [Go Rebuild Yourrself] Technology the `ZeroBuild` executable will try to rebootstrap itself every time you modify its source code.
+
+## Dependencies
+   1.[minirent](https://github.com/tsoding/minirent)
