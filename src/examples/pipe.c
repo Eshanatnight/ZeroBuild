@@ -3,6 +3,8 @@
 
 int main(void)
 {
+
+    // error
     CHAIN(IN(PATH("examples", "pipe.c")),
           CHAIN_CMD(PATH("tools", "rot13")),
           CHAIN_CMD(PATH("tools", "hex")),
