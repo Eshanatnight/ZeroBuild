@@ -1,7 +1,7 @@
 //
 // Created by eshan on 20-08-2021.
 //
-
+#include "minirent.h"
 #ifndef ZEROBUILD_ZEROBUILD_H
 #define ZEROBUILD_ZEROBUILD_H
 #ifndef _WIN32
@@ -206,7 +206,7 @@ do																        \
     const char *binary_path = argv[0];                                  \
                                                                         \
                                                                         \
-    if (is_path1_modified_after_path2(source_path, binary_path)         \
+    if (is_path1_modified_after_path2(source_path, binary_path))        \
     {                                                                   \
         RENAME(binary_path, CONCAT(binary_path, ".old"));               \
         REBUILD_URSELF(binary_path, source_path);                       \

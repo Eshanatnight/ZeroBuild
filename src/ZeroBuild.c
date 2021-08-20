@@ -2,7 +2,7 @@
 // Created by eshan on 20-08-2021.
 //
 
-#define ZEROBUILD_IMPLEMENTATION
+#define ZeroBuild_IMPLEMENTATION
 #include "ZeroBuild.h"
 
 #define CFLAGS "-Wall", "-Wextra", "-std=c99", "-pedantic"
