@@ -53,5 +53,27 @@ Keep in mind that [ZeroBuild.h](./src/ZeroBuild.h) is an [stb-style](https://git
 
 If you enable the [Go Rebuild Yourrself] Technology the `ZeroBuild` executable will try to rebootstrap itself every time you modify its source code.
 
+## TODOs:
+
+   - [ ] Add support for C++ or move Completely to C++ ? (TBD)
+   - [ ] Setup to work mostly with GCC or Ports of GCC add Functionality to do it with MS cl.exe ?*
+
+
+## Callouts:
+
+   -  is there a need for cl.exe support. I don't know if it's possible to use cl.exe with ZeroBuild as cl.exe requires development tools to be
+      installed and cl.exe can only run with an instance of Developer Powershell that has Elevated Access on Windows.
+
+   -  is there a need for a build system that can be used with cmake ? Cause the only reasons i can think of are:
+
+      - the reason I have included cmake is just so I can port ZeroBuild to MSVC from GCC.
+      - testing ZeroBuild with cmake seems to be a good idea. But Not sure how the implementation would go or even if it's worth it or not.
+
+
+## License Documentation
+
+   [LICENSE](./LICENSE)
+
 ## Dependencies
+
    1.[minirent](https://github.com/tsoding/minirent)

@@ -20,8 +20,9 @@ void build_tool(const char *tool)
 void build_tools(void)
 {
     FOREACH_FILE_IN_DIR(tool, "tools",
-                        {
-        if (ENDS_WITH(tool, ".c")) {
+    {
+        if (ENDS_WITH(tool, ".c")) 
+        {
             build_tool(tool);
         }
     });
